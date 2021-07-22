@@ -1,0 +1,11 @@
+.header {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(248, 128, 222),
+    rgb(250, 177, 19)
+  );
+}
+
+.navbar-nav > .nav-item > .nav-link {
+  color: whitesmoke;
+}
