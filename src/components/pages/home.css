@@ -1,5 +1,13 @@
+:root {
+  --bggradient: linear-gradient(
+    to bottom,
+    rgb(250, 30, 202),
+    rgb(252, 152, 59)
+  );
+}
+
 .header {
-  background: linear-gradient(to bottom, rgb(250, 30, 202), rgb(252, 152, 59));
+  background: var(--bggradient);
   width: 100%;
 }
 
