@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid ">
-        <Link className="navbar-brand text-light" to="#">
+        <Link className="navbar-brand text-light" to="/home">
           Book Store
         </Link>
         <button
@@ -23,22 +23,22 @@ const NavBar = () => {
           <div className="me-auto"></div>
           <ul className="navbar-nav">
             <li className="nav-item px-2">
-              <NavLink className="nav-link" aria-current="page" to="#">
+              <NavLink className="nav-link" aria-current="page" to="/home">
                 Home
               </NavLink>
             </li>
             <li className="nav-item px-2">
-              <NavLink className="nav-link" to="#">
+              <NavLink className="nav-link" to="/books">
                 Books
               </NavLink>
             </li>
             <li className="nav-item px-2">
-              <NavLink className="nav-link" to="#">
+              <NavLink className="nav-link" to="/about">
                 About
               </NavLink>
             </li>
             <li className="nav-item px-2">
-              <NavLink className="nav-link" aria-current="page" to="#">
+              <NavLink className="nav-link" aria-current="page" to="/contact">
                 Contact
               </NavLink>
             </li>
