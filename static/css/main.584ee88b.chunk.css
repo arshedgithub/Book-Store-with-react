@@ -1,0 +1,2 @@
+:root{--bggradient:linear-gradient(180deg,#fa1eca,#fc983b)}.header{background:linear-gradient(180deg,#fa1eca,#fc983b);background:var(--bggradient);width:100%}.navbar-nav>.nav-item>.nav-link{color:#f5f5f5}.navbar-nav{margin-right:0}.col>.headerText{vertical-align:middle}.col>.shopBtn>.btn{color:#f0f8ff}.col>.shopBtn>.btn:hover{background-color:#d3d8dd;border:none;color:#000}@media only screen and (max-width:550px){.col>.headerText{font-size:3vh!important}}.main{min-height:80vh}
+/*# sourceMappingURL=main.584ee88b.chunk.css.map */
