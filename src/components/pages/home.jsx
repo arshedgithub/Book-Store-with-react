@@ -3,7 +3,12 @@ import Header from "../header";
 import "./home.css";
 
 const Home = () => {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <div className="content">content</div>
+    </div>
+  );
 };
 
 export default Home;

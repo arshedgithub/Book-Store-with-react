@@ -1,56 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faBookReader } from "@fortawesome/free-solid-svg-icons";
+import NavbarList from "./navbarList";
 
 const NavBar = () => {
+  const [mobileMenu, setMobileMenu] = useState(false);
+
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid ">
-        <Link className="navbar-brand text-light" to="/home">
-          Book Store
+        <Link className="navbar-brand text-light mb-2" to="/home">
+          <FontAwesomeIcon icon={faBookReader} size="2x" />
+          &nbsp; Book Store
         </Link>
         <button
           className="navbar-toggler"
           type="button"
+          onClick={() => setMobileMenu(!mobileMenu)}
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="fs-3 text-light">
+            <FontAwesomeIcon icon={faBars} />
+          </span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="me-auto"></div>
-          <ul className="navbar-nav">
-            <li className="nav-item px-2">
-              <NavLink className="nav-link" aria-current="page" to="/home">
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item px-2">
-              <NavLink className="nav-link" to="/books">
-                Books
-              </NavLink>
-            </li>
-            <li className="nav-item px-2">
-              <NavLink className="nav-link" to="/about">
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item px-2">
-              <NavLink className="nav-link" aria-current="page" to="/contact">
-                Contact
-              </NavLink>
-            </li>
-
-            <li className="nav-item px-2">
-              <button className="signBtn btn border border-white text-light">
-                sign in
-              </button>
-            </li>
-          </ul>
+          <NavbarList />
         </div>
       </div>
+      {mobileMenu ? <NavbarList /> : ""}
     </nav>
   );
 };

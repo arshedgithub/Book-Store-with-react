@@ -14,7 +14,7 @@ const Header = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
             accusamus eum dignissimos ipsa sequi expedita.
           </p>
-          <Link to="#" className="shopBtn">
+          <Link to="/books" className="shopBtn">
             <button className=" btn border m-3">shop now</button>
           </Link>
         </div>
