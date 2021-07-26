@@ -20,7 +20,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/signin" component={SignIn} />
           <Route path="/not-found" component={NotFound} />
-          <Redirect from='/' exact to='/home' />
+          <Redirect from='/' to='/home' />
           <Redirect to='/not-found' />
         </Switch>
       </div>
