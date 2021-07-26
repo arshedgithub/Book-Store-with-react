@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <HashRouter basename={'/Book-Store-with-react'}>
+  <HashRouter>
     <App />
   </HashRouter>,
   document.getElementById('root')
