@@ -7,8 +7,16 @@ import NavbarList from "./navbarList";
 const NavBar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
+  window.addEventListener("resize", () => setMobileMenu(false));
+
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav
+      className={
+        mobileMenu
+          ? "navbar navbar-expand-lg bg-dark"
+          : "navbar navbar-expand-lg"
+      }
+    >
       <div className="container-fluid ">
         <Link className="navbar-brand text-light mb-2" to="/home">
           <FontAwesomeIcon icon={faBookReader} size="2x" />
