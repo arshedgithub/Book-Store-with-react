@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./../navbar";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
@@ -7,8 +8,11 @@ const NotFound = () => {
       <div className="bg-dark">
         <NavBar />
       </div>
-      <div className="content m-5">
-        <h1>Page Not Found</h1>
+      <div className="content m-5 text-center">
+        <p className="fs-5">The page you are looking for is unavailable</p>
+        <Link to="/home">
+          <button className="btn btn-secondary">Go to Home</button>
+        </Link>
       </div>
     </React.Fragment>
   );
