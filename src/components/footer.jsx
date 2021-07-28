@@ -11,7 +11,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <footer>
-      <div className="container-fluid bg-dark">
+      <div className="container-fluid bg-dark mt-3">
         <div className="row text-left">
           <div className="col-md-5 col-sm-5 p-3">
             <h4 className="text-light">About us</h4>
@@ -19,9 +19,7 @@ const Footer = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
               maxime ea similique illum corrupti
             </p>
-            <p className="pt-4 text-muted">
-              Copyright &copy;2021 Arshed Ahmed{" "}
-            </p>
+            <p className="pt-4 text-muted">Copyright &copy;2021 Arshed Ahmed</p>
           </div>
           <div className="col-md-5 col-sm-12 p-3">
             <h4 className="text-light">Newsletter</h4>

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavbarList = () => {
   return (
@@ -26,9 +26,11 @@ const NavbarList = () => {
       </li>
 
       <li className="nav-item p-2 px-4">
-        <button className="signBtn btn border border-white text-light">
-          sign in
-        </button>
+        <Link to="/signin">
+          <button className="signBtn btn border border-white text-light">
+            sign in
+          </button>
+        </Link>
       </li>
     </ul>
   );

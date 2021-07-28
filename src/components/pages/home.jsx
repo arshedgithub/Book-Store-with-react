@@ -3,12 +3,27 @@ import Header from "../header";
 import "./home.css";
 import { faDesktop, faMobile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Cards from "./../cards";
+import Readers from "./../readers";
 
 const Home = () => {
   return (
     <div>
       <Header />
+
+      <div className="m-5 text-center">
+        <div className="card  d-inline-block mr-2 shadow">
+          <div className="card-body">
+            <h3 className="card-title">Amiel Barbara</h3>
+            <p className="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure
+              autem recusandae, veniam, illo dolor soluta assumenda minima quia
+              velit officia sit exercitationem nam ipsa, repellendus aut facilis
+              quasi voluptas!
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="content">
         <div className="container-fluid text-center">
           <div className="numbers d-flex flex-md-row flex-wrap justify-content-center">
@@ -27,8 +42,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <Cards />
 
       <div className="section-3 container-fluid p-5 text-center text-light my-2">
         <div className="row">
@@ -49,7 +62,7 @@ const Home = () => {
               <div className="d-flex flex-row justify-content-center text-dark py-3">
                 <FontAwesomeIcon icon={faDesktop} size="3x" className="mx-3" />
                 <div className="text text-left">
-                  <h3 className="m-0">Desktop</h3>
+                  <h5 className="m-0">Desktop</h5>
                   <p className="p-0 m-0">On website</p>
                 </div>
               </div>
@@ -60,13 +73,21 @@ const Home = () => {
               <div className="d-flex flex-row justify-content-center text-dark py-3">
                 <FontAwesomeIcon icon={faMobile} size="3x" className="mx-3" />
                 <div className="text text-left">
-                  <h3 className="m-0">On Mobile</h3>
+                  <h5 className="m-0">On Mobile</h5>
                   <p className="p-0 m-0">On Play Store</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="readers mt-5">
+        <div class="container text-center">
+          <h4 class="text-dark">What our Reader's Say about us</h4>
+          <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <Readers />
       </div>
     </div>
   );
