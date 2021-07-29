@@ -15,9 +15,9 @@ const NavbarList = () => {
         </NavLink>
       </li>
       <li className="nav-item p-2">
-        <NavLink className="nav-link" to="/about">
+        <div className="nav-link" to="/about">
           About
-        </NavLink>
+        </div>
       </li>
       <li className="nav-item p-2">
         <NavLink className="nav-link" aria-current="page" to="/contact">
