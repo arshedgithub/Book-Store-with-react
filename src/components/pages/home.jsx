@@ -33,7 +33,7 @@ const Home = () => {
             </div>
             <div className="card rounded shadow-lg px-5 py-3 m-3">
               <h1 className="text-danger">556</h1>
-              <p className="fs-4">Solved Books</p>
+              <p className="fs-4">Sold Books</p>
             </div>
             <div className="card rounded shadow-lg px-5 py-3 m-3">
               <h1 className="text-danger">152</h1>
@@ -83,9 +83,9 @@ const Home = () => {
       </div>
 
       <div className="readers mt-5">
-        <div class="container text-center">
-          <h4 class="text-dark">What our Reader's Say about us</h4>
-          <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+        <div className="container text-center">
+          <h4 className="text-dark">What our Reader's Say about us</h4>
+          <p className="text-secondary">Lorem ipsum dolor sit amet.</p>
         </div>
         <Readers />
       </div>

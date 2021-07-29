@@ -26,7 +26,10 @@ const SignIn = () => {
           <form onSubmit={handlesubmit}>
             <Input type="text" name="Username" />
             <Input type="password" name="Password" />
-            <button className="btn btn-primary">sign in</button>
+            <div className="btns mt-3">
+              <button className="btn btn-primary m-1">sign in</button>
+              <button className="btn btn-primary m-1">sign up</button>
+            </div>
           </form>
         </div>
       </div>
