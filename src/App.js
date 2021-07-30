@@ -8,6 +8,7 @@ import Books from './components/pages/books';
 import SignIn from './components/pages/signIn';
 import Footer from './components/footer';
 import './App.css';
+import Cart from './components/pages/cart';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/books" component={Books} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/cart" component={Cart} />
           <Route path="/signin" component={SignIn} />
           <Route path="/not-found" component={NotFound} />
           <Redirect from='/' exact to='/home' />

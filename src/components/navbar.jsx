@@ -38,10 +38,10 @@ const NavBar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="me-auto"></div>
-          <NavbarList />
+          <NavbarList mobileMenu={mobileMenu} />
         </div>
       </div>
-      {mobileMenu ? <NavbarList /> : ""}
+      {mobileMenu ? <NavbarList mobileMenu={mobileMenu} /> : ""}
     </nav>
   );
 };

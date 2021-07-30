@@ -11,7 +11,7 @@ const BookCard = () => {
       />
       <div className="card-body">
         <h5 className="card-title m-2">{bookName}</h5>
-        <a href="#" className="btn btn-primary">
+        <a href="#" className="btn btn-secondary">
           Buy Now
         </a>
       </div>

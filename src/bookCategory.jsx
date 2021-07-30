@@ -22,7 +22,7 @@ const BookCategory = ({ category }) => {
         <div className="col-sm-1 m-1 mt-5">
           <Link to="/signin">
             <FontAwesomeIcon
-              className="mt-5"
+              className="mt-5 text-body"
               icon={faAngleDoubleRight}
               size="3x"
             />

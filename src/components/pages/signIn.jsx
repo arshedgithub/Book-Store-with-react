@@ -27,8 +27,8 @@ const SignIn = () => {
             <Input type="text" name="Username" />
             <Input type="password" name="Password" />
             <div className="btns mt-3">
-              <button className="btn btn-primary m-1">sign in</button>
-              <button className="btn btn-primary m-1">sign up</button>
+              <button className="btn btn-secondary m-1">sign in</button>
+              <button className="btn btn-secondary m-1">sign up</button>
             </div>
           </form>
         </div>
