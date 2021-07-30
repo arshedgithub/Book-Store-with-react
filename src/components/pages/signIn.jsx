@@ -7,7 +7,8 @@ import { Link, useHistory } from "react-router-dom";
 const SignIn = () => {
   let history = useHistory();
 
-  const handlesubmit = () => {
+  const handlesubmit = (e) => {
+    e.preventDefault();
     console.log("log");
     history.goBack("home");
   };
