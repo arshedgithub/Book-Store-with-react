@@ -1,7 +1,7 @@
 import React from "react";
 
-const BookCard = () => {
-  let bookName = "book";
+const BookCard = ({ elem }) => {
+  console.log(elem);
   return (
     <div className="card">
       <img
@@ -10,7 +10,8 @@ const BookCard = () => {
         alt="placeholder"
       />
       <div className="card-body">
-        <h5 className="card-title m-2">{bookName}</h5>
+        <h5 className="card-title m-2">{}</h5>
+        <p>{}</p>
         <a href="#" className="btn btn-secondary">
           Buy Now
         </a>
