@@ -40,6 +40,10 @@ div > .section-3 {
   margin: 0 10vw 0 10vw;
 }
 
+.rec.rec-arrow {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 550px) {
   .col > .headerText {
     font-size: 3vh !important;

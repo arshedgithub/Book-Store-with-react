@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "./../navbar";
-import BookCategory from "./../../bookCategory";
+import NavBar from "./../components/navbar";
+import BookCategory from "./../components/bookCategory";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { getItems } from "./../../services/fakeDB";
+import http from "./../services/httpServices";
+import { getItems } from "./../services/fakeDB";
 
 const Books = () => {
   const [adArry, setAdArry] = useState([]);
@@ -15,6 +16,12 @@ const Books = () => {
   let cartcount = 10;
 
   const items = getItems();
+
+  const getCat = async () => {
+    const cat = await http.get("http://localhost:5000/api/categories");
+    console.log(cat);
+  };
+  // getCat();
 
   useEffect(() => {
     for (let i = 0; i < items.length; i++) {

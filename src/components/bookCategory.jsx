@@ -2,7 +2,7 @@ import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
-import BookCard from "./components/bookCard";
+import BookCard from "./bookCard";
 
 const BookCategory = ({ category, arry }) => {
   return (

@@ -1,14 +1,14 @@
-import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
-import Home from './components/pages/home';
-import NotFound from './components/pages/notFound';
-import Contact from './components/pages/contact';
-import About from './components/pages/about';
-import Books from './components/pages/books';
-import SignIn from './components/pages/signIn';
-import Footer from './components/footer';
-import './App.css';
-import Cart from './components/pages/cart';
+import React from "react";
+import { Redirect, Route, Switch } from "react-router-dom";
+import Home from "./pages/home";
+import NotFound from "./pages/notFound";
+import Contact from "./pages/contact";
+import About from "./pages/about";
+import Books from "./pages/books";
+import SignIn from "./pages/signIn";
+import Footer from "./components/footer";
+import "./App.css";
+import Cart from "./pages/cart";
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
           <Route path="/cart" component={Cart} />
           <Route path="/signin" component={SignIn} />
           <Route path="/not-found" component={NotFound} />
-          <Redirect from='/' exact to='/home' />
-          <Redirect to='/not-found' />
+          <Redirect from="/" exact to="/home" />
+          <Redirect to="/not-found" />
         </Switch>
       </div>
       <Footer />

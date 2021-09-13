@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../header";
+import Header from "../components/header";
 import "./home.css";
 import { faDesktop, faMobile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Readers from "./../readers";
+import Readers from "../components/readers";
 
 const Home = () => {
   return (

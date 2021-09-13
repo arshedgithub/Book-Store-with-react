@@ -1,5 +1,5 @@
-import React from "react";
-import NavBar from "./../navbar";
+import React, { useEffect } from "react";
+import NavBar from "./../components/navbar";
 
 const Contact = () => {
   return (
